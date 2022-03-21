@@ -42,6 +42,8 @@ class Spaceship{
 let ship1 = new Spaceship("Voyager", 1000,100, 0.3, 20);
 let ship2 = new Spaceship("Enterprise", 800,50, 0, 20);
 
-while(ship2.hp > 0){
-    ship1.fireAtTarget(ship2) || ship2.fireAtTarget(ship1)
-}
+while( ship1. hp>0 && ship2. hp>0) {
+    ship1. fireAtTarget(ship2);
+   
+    ship2. fireAtTarget(ship1);
+   }
